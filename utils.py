@@ -25,7 +25,7 @@ def cast_df(df, col, d_type=str):
 def impute_df(df, col, impute_value=0):
     return df[col].fillna(impute_value)
     
-def preprocess_df(df, categorical_col_list, numerical_col_list, predictor, categorical_impute_value='nan',             numerical_impute_value=0):
+def preprocess_df(df, categorical_col_list, numerical_col_list, predictor, numerical_impute_value=0):
     df[predictor] = df[predictor].astype(float)
     for c in categorical_col_list:
         df[c] = cast_df(df, c, d_type=str)

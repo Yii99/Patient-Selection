@@ -4,7 +4,7 @@ import os
 import tensorflow as tf
 import functools
 
-####### STUDENTS FILL THIS OUT ######
+
 #Question 3
 def reduce_dimension_ndc(df, ndc_df):
     '''
